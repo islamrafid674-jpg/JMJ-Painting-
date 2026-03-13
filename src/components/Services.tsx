@@ -36,9 +36,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-32 bg-[#fcfcfc]">
+    <section id="services" className="py-20 md:py-32 bg-[#fcfcfc]">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20 gap-8">
           <div className="max-w-2xl">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export default function Services() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 md:gap-y-16">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -99,7 +99,7 @@ export default function Services() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="mt-32 bg-[#0a0a0a] p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 relative overflow-hidden"
+          className="mt-20 md:mt-32 bg-[#0a0a0a] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10 relative overflow-hidden"
         >
           {/* Decorative background element */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>

@@ -29,9 +29,9 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="py-32 bg-[#fcfcfc] border-t border-gray-100">
+    <section className="py-20 md:py-32 bg-[#fcfcfc] border-t border-gray-100">
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-        <div className="text-center mb-24">
+        <div className="text-center mb-16 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -67,9 +67,9 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between py-8 text-left focus:outline-none group"
+                className="w-full flex items-center justify-between py-6 md:py-8 text-left focus:outline-none group"
               >
-                <span className={`font-serif text-2xl pr-8 transition-colors duration-300 ${openIndex === index ? 'text-primary' : 'text-gray-900 group-hover:text-primary'}`}>
+                <span className={`font-serif text-xl md:text-2xl pr-4 md:pr-8 transition-colors duration-300 ${openIndex === index ? 'text-primary' : 'text-gray-900 group-hover:text-primary'}`}>
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 text-gray-400 group-hover:text-primary transition-colors duration-300">
@@ -85,7 +85,7 @@ export default function FAQ() {
                     transition={{ duration: 0.4, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="pb-8 text-gray-500 leading-relaxed font-light text-lg pr-12">
+                    <div className="pb-6 md:pb-8 text-gray-500 leading-relaxed font-light text-base md:text-lg pr-4 md:pr-12">
                       {faq.answer}
                     </div>
                   </motion.div>

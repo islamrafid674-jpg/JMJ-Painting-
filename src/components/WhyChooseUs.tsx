@@ -26,9 +26,9 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-32 bg-white overflow-hidden">
+    <section id="why-us" className="py-20 md:py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex flex-col lg:flex-row gap-20 items-center">
+        <div className="flex flex-col lg:flex-row gap-12 md:gap-20 items-center">
           {/* Left Content */}
           <div className="lg:w-1/2">
             <motion.div
@@ -56,12 +56,12 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg text-gray-500 mb-12 leading-relaxed font-light"
+              className="text-lg text-gray-500 mb-10 md:mb-12 leading-relaxed font-light"
             >
               Discerning homeowners trust JMJ Home Remodeling because we treat every commission as a work of art. We combine the world's finest materials with meticulous, time-honored installation techniques to ensure your surfaces remain flawless for generations.
             </motion.p>
 
-            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-12 mb-16">
+            <div className="grid sm:grid-cols-2 gap-x-8 gap-y-10 md:gap-y-12 mb-12 md:mb-16">
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={benefit.title}
@@ -120,7 +120,7 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 0.6 }}
-                className="absolute bottom-8 -left-8 md:left-8 right-8 bg-white p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 z-20"
+                className="absolute bottom-4 left-4 right-4 md:bottom-8 md:-left-8 md:right-8 bg-white p-6 md:p-8 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.1)] border border-gray-100 z-20"
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="flex text-primary">

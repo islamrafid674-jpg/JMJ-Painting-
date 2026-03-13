@@ -25,9 +25,9 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="py-32 bg-[#0a0a0a] text-white">
+    <section id="process" className="py-20 md:py-32 bg-[#0a0a0a] text-white">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export default function Process() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.6 }}
-          className="mt-24 text-center"
+          className="mt-16 md:mt-24 text-center"
         >
           <a
             href="tel:9089066199"

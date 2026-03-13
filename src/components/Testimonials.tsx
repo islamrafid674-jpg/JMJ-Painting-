@@ -21,12 +21,12 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-32 bg-[#0a0a0a] text-white relative overflow-hidden">
+    <section id="testimonials" className="py-20 md:py-32 bg-[#0a0a0a] text-white relative overflow-hidden">
       {/* Subtle Luxury Gradient Background */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(197,160,89,0.05)_0%,transparent_70%)] pointer-events-none"></div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="text-center max-w-3xl mx-auto mb-24">
+        <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.8, ease: "easeOut" }}
-              className="bg-[#111] p-10 border border-white/10 relative group hover:border-primary/50 transition-colors duration-500"
+              className="bg-[#111] p-8 md:p-10 border border-white/10 relative group hover:border-primary/50 transition-colors duration-500"
             >
               <Quote className="absolute top-8 right-8 text-white/5 group-hover:text-primary/10 transition-colors duration-500" size={64} />
               
